@@ -9,7 +9,8 @@
 <p align="center">
   <a href="https://developer.chrome.com/docs/extensions/mv3/intro/"><img src="icons/badge-mv3.svg" alt="Manifest V3"></a>
   <a href="LICENSE"><img src="icons/badge-license.svg" alt="MIT License"></a>
-  <a href="https://brave.com/"><img src="icons/badge-browsers.svg" alt="Supported Browsers"></a>
+  <a href="https://www.google.com/chrome/"><img src="icons/badge-chrome.svg" alt="Chrome Supported"></a>
+  <a href="https://brave.com/"><img src="icons/badge-brave.svg" alt="Brave Supported"></a>
   <img src="icons/badge-status.svg" alt="Status Active">
 </p>
 
@@ -122,7 +123,8 @@ Mobileforce-extension/
 │   ├── icon-128.png
 │   ├── badge-mv3.svg
 │   ├── badge-license.svg
-│   ├── badge-browsers.svg
+│   ├── badge-chrome.svg
+│   ├── badge-brave.svg
 │   └── badge-status.svg
 └── popup/
     ├── popup.html             # Luxury Dark Mode Interface

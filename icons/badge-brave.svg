@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="20" role="img" aria-label="Brave: Supported">
+  <clipPath id="r"><rect width="118" height="20" rx="3" fill="#fff"/></clipPath>
+  <g clip-path="url(#r)">
+    <rect width="46" height="20" fill="#555"/>
+    <rect x="46" width="72" height="20" fill="#FB542B"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text x="230" y="140" transform="scale(.1)" fill="#fff">Brave</text>
+    <text x="820" y="140" transform="scale(.1)" fill="#fff" font-weight="bold">Supported</text>
+  </g>
+</svg>
