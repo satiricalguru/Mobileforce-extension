@@ -4,8 +4,8 @@
 const DEVICES = {
   galaxy_s25: {
     name: 'Galaxy S25 Ultra',
-    os: 'Android 15',
-    userAgent: 'Mozilla/5.0 (Linux; Android 15; SM-S938B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.108 Mobile Safari/537.36',
+    os: 'Android 16',
+    userAgent: 'Mozilla/5.0 (Linux; Android 16; SM-S938B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.35 Mobile Safari/537.36',
     width: 412,
     height: 915,
     pixelRatio: 3.5,
@@ -13,8 +13,8 @@ const DEVICES = {
   },
   pixel_9: {
     name: 'Pixel 9 Pro',
-    os: 'Android 15',
-    userAgent: 'Mozilla/5.0 (Linux; Android 15; Pixel 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.108 Mobile Safari/537.36',
+    os: 'Android 16',
+    userAgent: 'Mozilla/5.0 (Linux; Android 16; Pixel 9 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.35 Mobile Safari/537.36',
     width: 412,
     height: 915,
     pixelRatio: 3.5,
@@ -22,8 +22,8 @@ const DEVICES = {
   },
   iphone_17: {
     name: 'iPhone 17 Pro Max',
-    os: 'iOS 19',
-    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.0 Mobile/15E148 Safari/604.1',
+    os: 'iOS 19.4',
+    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.4 Mobile/15E148 Safari/604.1',
     width: 430,
     height: 932,
     pixelRatio: 3,
@@ -31,8 +31,8 @@ const DEVICES = {
   },
   ipad_pro_m4: {
     name: 'iPad Pro 13" (M4)',
-    os: 'iPadOS 18.2',
-    userAgent: 'Mozilla/5.0 (iPad; CPU OS 18_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1',
+    os: 'iPadOS 19.4',
+    userAgent: 'Mozilla/5.0 (iPad; CPU OS 19_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.4 Mobile/15E148 Safari/604.1',
     width: 1024,
     height: 1366,
     pixelRatio: 2,
