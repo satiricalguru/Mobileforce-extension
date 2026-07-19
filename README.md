@@ -6,10 +6,12 @@
 
 **Bypass OTT Mobile-Only Plan Locks & Unblock Web Playback Across Major Streaming Platforms**
 
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-38bdf8.svg?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg?style=for-the-badge)](LICENSE)
-[![Browser Support](https://img.shields.io/badge/Browsers-Chrome%20%7C%20Brave-f59e0b.svg?style=for-the-badge&logo=brave)](https://brave.com/)
-[![Status](https://img.shields.io/badge/Status-Active-emerald.svg?style=for-the-badge)]()
+<p align="center">
+  <a href="https://developer.chrome.com/docs/extensions/mv3/intro/"><img src="https://img.shields.io/badge/Manifest-V3-38bdf8" alt="Manifest V3"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10b981" alt="MIT License"></a>
+  <a href="https://brave.com/"><img src="https://img.shields.io/badge/Chrome_%7C_Brave-Supported-f59e0b" alt="Supported Browsers"></a>
+  <img src="https://img.shields.io/badge/Status-Active-10b981" alt="Status Active">
+</p>
 
 </div>
 
