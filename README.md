@@ -7,7 +7,7 @@
 **Bypass OTT Mobile-Only Plan Locks & Unblock Web Playback Across Major Streaming Platforms**
 
 <p align="center">
-  <a href="https://developer.chrome.com/docs/extensions/mv3/intro/"><img src="https://img.shields.io/badge/Manifest-V3-38bdf8" alt="Manifest V3"></a>
+  <a href="https://developer.chrome.com/docs/extensions/mv3/intro/"><img src="https://img.shields.io/badge/Manifest_V3-Extension-38bdf8" alt="Manifest V3"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10b981" alt="MIT License"></a>
   <a href="https://brave.com/"><img src="https://img.shields.io/badge/Chrome_%7C_Brave-Supported-f59e0b" alt="Supported Browsers"></a>
   <img src="https://img.shields.io/badge/Status-Active-10b981" alt="Status Active">
