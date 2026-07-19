@@ -51,28 +51,34 @@ By orchestrating **declarative network header modification**, **DOM environment 
 
 ## 🛠️ 3-Layer Bypass Architecture
 
+```mermaid
+graph TD
+    REQ[Outgoing Request / Response] --> L1[1. Network Layer]
+    REQ --> L2[2. DOM / Browser Context Layer]
+    REQ --> L3[3. Payload API Interceptor Layer]
+
+    subgraph L1_BOX["1. Network Layer (Declarative Net Request)"]
+        L1 --> H1["User-Agent Header Modification"]
+        L1 --> H2["Sec-CH-UA-Mobile: ?1"]
+        L1 --> H3["Sec-CH-UA-Platform: Android / iOS"]
+    end
+
+    subgraph L2_BOX["2. DOM Context Layer (MAIN World Content Script)"]
+        L2 --> D1["navigator.userAgent / platform / vendor"]
+        L2 --> D2["Touch API Emulation (maxTouchPoints: 5)"]
+    end
+
+    subgraph L3_BOX["3. Payload API Interceptor Layer (Fetch & XHR)"]
+        L3 --> P1["allowedPlatforms: ['mobile','web','desktop','tablet']"]
+        L3 --> P2["isAppOnly: false | allowedOnWeb: true"]
+        L3 --> P3["planType: 'super' | maxScreens: 4"]
+    end
 ```
-                                  [ Outgoing Requests ]
-                                           │
-  ┌────────────────────────────────────────┼────────────────────────────────────────┐
-  │ 1. Network Layer                       │ Declarative Net Request (Header Rules)  │
-  │    • User-Agent: Galaxy S25 Ultra / iPhone 17 Pro Max                            │
-  │    • Sec-CH-UA-Mobile: ?1                                                       │
-  │    • Sec-CH-UA-Platform: "Android" / "iOS"                                      │
-  └────────────────────────────────────────┼────────────────────────────────────────┘
-                                           │
-  ┌────────────────────────────────────────┼────────────────────────────────────────┐
-  │ 2. DOM / Browser Context Layer          │ MAIN World Content Script               │
-  │    • navigator.userAgent / platform / vendor                                    │
-  │    • Touch API Emulation (maxTouchPoints: 5)                                    │
-  └────────────────────────────────────────┼────────────────────────────────────────┘
-                                           │
-  ┌────────────────────────────────────────┼────────────────────────────────────────┐
-  │ 3. Payload API Interceptor Layer       │ Fetch & XHR Response Interceptor        │
-  │    • allowedPlatforms: ["mobile","web","desktop","tablet"]                    │
-  │    • isAppOnly: false, allowedOnWeb: true, planType: "super"                  │
-  └─────────────────────────────────────────────────────────────────────────────────┘
-```
+
+### Technical Breakdown:
+- **Layer 1 (Network Layer)**: Native `declarativeNetRequest` rules modify HTTP headers (`User-Agent`, `Sec-CH-UA-Mobile`, `Sec-CH-UA-Platform`) below the CORS layer.
+- **Layer 2 (DOM Context Layer)**: Synchronous `MAIN` world content script overrides `navigator` JS properties before page scripts execute.
+- **Layer 3 (Payload Interceptor Layer)**: Intercepts `fetch` and `XMLHttpRequest` JSON responses to automatically patch OTT entitlement objects.
 
 ---
 
