@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MobileForce</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-row">
+        <div class="logo-icon-wrap">
+          <img src="../icons/icon-48.png" alt="MobileForce Icon" class="header-logo-img">
+        </div>
+        <div class="brand-info">
+          <h1 class="title">MobileForce</h1>
+          <span class="badge-tag">OTT Bypass System</span>
+        </div>
+      </div>
+      <!-- Right-side Help / Info Button -->
+      <button class="header-action-btn" id="help-btn" title="How to use & Info" aria-label="How to use">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Master Toggle Card -->
+    <div class="toggle-card" id="toggle-card">
+      <div class="toggle-left">
+        <div class="status-indicator">
+          <div class="status-dot" id="status-dot"></div>
+          <span class="status-pulse" id="status-pulse"></span>
+        </div>
+        <div class="toggle-text-group">
+          <span class="toggle-label" id="toggle-label">Disabled</span>
+          <span class="toggle-subtext" id="toggle-subtext">Protection inactive</span>
+        </div>
+      </div>
+      <label class="switch" for="master-toggle">
+        <input type="checkbox" id="master-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <!-- Device Selector Section -->
+    <section class="section" id="device-section">
+      <div class="section-header">
+        <span class="section-title">Device Profile</span>
+        <span class="section-chip">Flagship Series</span>
+      </div>
+      
+      <div class="device-grid">
+        <button class="device-btn" data-device="galaxy_s25">
+          <div class="device-badge-rec">REC</div>
+          <div class="device-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="3"></rect>
+              <path d="M12 18h.01"></path>
+            </svg>
+          </div>
+          <span class="device-name">Galaxy S25 Ultra</span>
+          <span class="device-os">Android 15</span>
+        </button>
+
+        <button class="device-btn" data-device="pixel_9">
+          <div class="device-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2" width="12" height="20" rx="3"></rect>
+              <path d="M12 18h.01"></path>
+            </svg>
+          </div>
+          <span class="device-name">Pixel 9 Pro</span>
+          <span class="device-os">Android 15</span>
+        </button>
+
+        <button class="device-btn" data-device="iphone_17">
+          <div class="device-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="3.5"></rect>
+              <path d="M10 5h4"></path>
+              <path d="M12 18h.01"></path>
+            </svg>
+          </div>
+          <span class="device-name">iPhone 17 Pro Max</span>
+          <span class="device-os">iOS 19</span>
+        </button>
+
+        <button class="device-btn" data-device="ipad_pro_m4">
+          <div class="device-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+              <path d="M12 17h.01"></path>
+            </svg>
+          </div>
+          <span class="device-name">iPad Pro 13" (M4)</span>
+          <span class="device-os">iPadOS 18.2</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Active Protection Layers -->
+    <section class="section" id="details-section">
+      <span class="section-title">Active Protection Layers</span>
+      <div class="spoof-list">
+        <div class="spoof-item">
+          <div class="spoof-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <span class="spoof-text">Mobile User-Agent Header</span>
+          <span class="spoof-check" id="check-ua">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <div class="spoof-item">
+          <div class="spoof-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="15" x2="23" y2="15"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="15" x2="4" y2="15"></line>
+            </svg>
+          </div>
+          <span class="spoof-text">Client Hints & OS Tokens</span>
+          <span class="spoof-check" id="check-hints">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <div class="spoof-item">
+          <div class="spoof-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+              <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v6"></path>
+              <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+              <path d="M18 8a2 2 0 0 1 2 2v4a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+            </svg>
+          </div>
+          <span class="spoof-text">Mobile Touch Emulation</span>
+          <span class="spoof-check" id="check-touch">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <div class="spoof-item highlight-spoof">
+          <div class="spoof-icon">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <span class="spoof-text">Subscription API Interceptor</span>
+          <span class="spoof-check" id="check-bypass">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Banner -->
+    <footer class="info-banner" id="info-banner">
+      <div class="info-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </div>
+      <span>Hard refresh (<b>Cmd+Shift+R</b> / <b>Ctrl+F5</b>) the OTT page after toggling.</span>
+    </footer>
+  </div>
+
+  <!-- Help & Information Modal Overlay -->
+  <div class="modal-backdrop" id="help-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <h2 class="modal-title">How MobileForce Works</h2>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Quick Start Guide -->
+        <div class="guide-section">
+          <h3 class="guide-heading">Quick Setup Guide</h3>
+          <div class="step-list">
+            <div class="step-card">
+              <div class="step-num">1</div>
+              <div class="step-info">
+                <span class="step-title">Toggle Active</span>
+                <span class="step-desc">Turn the main switch ON to start the bypass engine.</span>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-num">2</div>
+              <div class="step-info">
+                <span class="step-title">Select Device Profile</span>
+                <span class="step-desc">Choose <b>Galaxy S25 Ultra</b> (recommended for Chromium browsers) or iPhone 17 Pro Max.</span>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-num">3</div>
+              <div class="step-info">
+                <span class="step-title">Hard Refresh Page</span>
+                <span class="step-desc">Press <b>Cmd+Shift+R</b> (Mac) or <b>Ctrl+F5</b> (Windows) on Hotstar/JioCinema.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Architecture -->
+        <div class="guide-section">
+          <h3 class="guide-heading">3-Layer Security Bypass</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-tag">Layer 1 · Network</span>
+              <p class="tech-desc">Overrides HTTP User-Agent and Client-Hints headers before network requests hit OTT servers.</p>
+            </div>
+            <div class="tech-item">
+              <span class="tech-tag">Layer 2 · Browser</span>
+              <p class="tech-desc">Overrides <code>navigator.userAgent</code>, <code>platform</code>, and touch APIs in document context.</p>
+            </div>
+            <div class="tech-item">
+              <span class="tech-tag">Layer 3 · Payload API</span>
+              <p class="tech-desc">Intercepts fetch/XHR responses to unblock <code>allowedPlatforms</code> & <code>mobileOnly</code> plan limits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="modal-done-btn" id="modal-done-btn">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
