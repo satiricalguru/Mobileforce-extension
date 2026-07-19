@@ -22,8 +22,8 @@ const DEVICES = {
   },
   iphone_17: {
     name: 'iPhone 17 Pro Max',
-    os: 'iOS 19.4',
-    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 19_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.4 Mobile/15E148 Safari/604.1',
+    os: 'iOS 26.5',
+    userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Mobile/15E148 Safari/604.1',
     width: 430,
     height: 932,
     pixelRatio: 3,
@@ -31,8 +31,8 @@ const DEVICES = {
   },
   ipad_pro_m4: {
     name: 'iPad Pro 13" (M4)',
-    os: 'iPadOS 19.4',
-    userAgent: 'Mozilla/5.0 (iPad; CPU OS 19_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/19.4 Mobile/15E148 Safari/604.1',
+    os: 'iPadOS 26.5',
+    userAgent: 'Mozilla/5.0 (iPad; CPU OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Mobile/15E148 Safari/604.1',
     width: 1024,
     height: 1366,
     pixelRatio: 2,

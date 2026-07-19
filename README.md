@@ -31,8 +31,8 @@ By orchestrating **declarative network header modification**, **DOM environment 
 - 📱 **Latest Flagship Device Profiles**:
   - **Samsung Galaxy S25 Ultra** (Android 16) *(Recommended for Chromium)*
   - **Google Pixel 9 Pro** (Android 16)
-  - **iPhone 17 Pro Max** (iOS 19.4)
-  - **iPad Pro 13" (M4)** (iPadOS 19.4)
+  - **iPhone 17 Pro Max** (iOS 26.5)
+  - **iPad Pro 13" (M4)** (iPadOS 26.5)
 - 🔓 **Multi-OTT Subscription Bypass Engine**: Automatically intercepts and unblocks payload restriction flags (`allowedPlatforms`, `isAppOnly`, `allowedOnWeb`, `planType`, `maxScreens`).
 - 🎨 **Luxury Dark Glassmorphism UI**: Ultra-sleek, monochrome graphite interface built with custom vector iconography and responsive state indicators.
 - ⚡ **Zero Performance Overhead**: Powered by Chrome's native `declarativeNetRequest` API and non-blocking asynchronous event bridges.
