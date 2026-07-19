@@ -40,6 +40,19 @@ By orchestrating **declarative network header modification**, **DOM environment 
 
 ---
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/popup-interface.png" alt="MobileForce Main Interface" width="330">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/system-guide.png" alt="How MobileForce Works Modal Guide" width="330">
+</p>
+<p align="center">
+  <sub><b>Left:</b> Luxury Dark Popup UI &nbsp;&nbsp;•&nbsp;&nbsp; <b>Right:</b> Interactive System Setup & Technical Guide Modal</sub>
+</p>
+
+---
+
 ## 🌐 Supported OTT Platforms
 
 | Platform | Bypass Target | Strategy |
@@ -111,6 +124,9 @@ Mobileforce-extension/
 ├── manifest.json              # Manifest V3 Extension Configuration
 ├── LICENSE                    # MIT Open Source License
 ├── README.md                  # Project Documentation & Guide
+├── assets/
+│   ├── popup-interface.png    # Extension Main Interface Screenshot
+│   └── system-guide.png       # Help Modal Guide Screenshot
 ├── background/
 │   └── service-worker.js      # Dynamic DeclarativeNetRequest Header Engine
 ├── content/
